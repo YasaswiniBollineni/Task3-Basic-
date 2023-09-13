@@ -1,25 +1,27 @@
 import logo from './logo.svg';
 import './App.css';
+import './Rev/Revu/Yashu';
+import './Rev/Revulu/Thanu';
+import Second from './Second.js';
+import './Component/About';
+import './Component/Contact';
+import About from './Component/About';
+import Contact from './Component/Contact';
+import Yashu from './Rev/Revu/Yashu';
+import Thanu from './Rev/Revulu/Thanu';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    <><h1 className="Ok">HII YASHU</h1>
+    <h1>Nice to meet u</h1>
+    <Second/>
+    <About/>
+    <Contact/>
+    <Yashu/>
+    <Thanu/>
+    </>
+    
+ );
 }
 
 export default App;
