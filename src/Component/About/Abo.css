@@ -1,0 +1,27 @@
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .content {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .content-text {
+    flex: 1;
+  }
+  
+  .content-image {
+    flex: 1;
+    margin-left: 20px;
+  }
+  
+  .image {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+  }
+  

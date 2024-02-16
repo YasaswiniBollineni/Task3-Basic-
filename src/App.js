@@ -1,27 +1,35 @@
-import logo from './logo.svg';
-import './App.css';
-import './Rev/Revu/Yashu';
-import './Rev/Revulu/Thanu';
-import Second from './Second.js';
-import './Component/About';
-import './Component/Contact';
-import About from './Component/About';
-import Contact from './Component/Contact';
-import Yashu from './Rev/Revu/Yashu';
-import Thanu from './Rev/Revulu/Thanu';
 
+import './App.css';
+import Footer from './Component/Footer/Footer';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import Navbar from './Component/Navbar/Navbar';
+import Signup from './Component/Login/Signup';
+import Login from './Component/Login/Login';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import Home from './Component/Home/Home';
+import Abo from './Component/About/Abo';
+import Cont from './Component/Contact/Cont';//svg(for logo)
+import Getweather from "./Component/Getweather/Getweather";
+import WeatherForecast from "./Component/WeatherForecast/WeatherForecast";
 function App() {
   return (
-    <><h1 className="Ok">HII YASHU</h1>
-    <h1>Nice to meet u</h1>
-    <Second/>
-    <About/>
-    <Contact/>
-    <Yashu/>
-    <Thanu/>
-    </>
+    // <>
+    //   <Navbar/>  
+    //   <Footer/>
+    //   <Signup />
+    // </>
     
- );
+    <Routes>
+      <Route path='/register' element={<Signup />}></Route>
+      <Route path='/login' element={<Login />}></Route>
+      <Route path='/navbar' element={<Navbar />}></Route>
+      <Route exact path='/Home' element={<Home />}></Route>
+            <Route exact path='/Abo' element={<Abo />}></Route>
+            <Route exact path='/Cont' element={<Cont />}></Route>
+            <Route exact path='/Getweather' element={<Getweather />}></Route>
+            <Route exact path='/WeatherForecast' element={<WeatherForecast />}></Route>
+    </Routes>
+  );
 }
 
 export default App;

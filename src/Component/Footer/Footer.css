@@ -1,0 +1,40 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+footer{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    place-items: center;
+    height: 300px;
+    border: solid;
+    background: #000;
+   
+
+
+}
+footer p{
+    color: white;
+}
+footer .icons i{
+    color: black;
+    background: white;
+    padding: 10px;
+    margin: 5px;
+    grid-template-columns: repeat(4, 1fr);
+    border-radius: 50%;
+    line-height: normal;
+}
+footer a{
+    background: white;
+    text-decoration: none;
+    border-radius: 7px;
+    color: black;
+    padding: 10px;
+}
+.card{
+    width: 200px;
+    height: 200px;
+
+}
